@@ -1,6 +1,6 @@
-# antalya
+# Antalya Flutter Study Jam
 
-A new Flutter application.
+Antalya'da düzenlenen Flutter Study Jam'de yazılmış olan demo uygulama.
 
 ## Getting Started
 
