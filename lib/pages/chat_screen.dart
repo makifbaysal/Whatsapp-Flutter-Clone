@@ -1,4 +1,5 @@
 import 'package:antalya/view/chat_detail.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import '../model/chat_model.dart';
 
@@ -23,7 +24,9 @@ class ChatScreenState extends State<ChatScreen> {
                 leading: new CircleAvatar(
                   foregroundColor: Theme.of(context).primaryColor,
                   backgroundColor: Colors.grey,
-                  backgroundImage: new NetworkImage(dummy[i].avatarUrl),
+                  backgroundImage: CachedNetworkImageProvider(
+                    dummy[i].avatarUrl
+                  ),
                 ),
                 title: new Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -41,13 +44,13 @@ class ChatScreenState extends State<ChatScreen> {
                 subtitle: new Container(
                   padding: const EdgeInsets.only(top: 5.0),
                   child: new Text(
-                    dummy[i].message,
+                    dummy[i].lastMessage,
                     style: new TextStyle(color: Colors.grey , fontSize: 15.0)),
                 ),
                 onTap: () => Navigator
                   .of(context)
                   .push(new MaterialPageRoute(builder: (context) {
-                    return new ChatDetail(dummy[i].name,dummy[i].avatarUrl);
+                    return new ChatDetail(name: dummy[i].name,imgurl:dummy[i].avatarUrl,chatId: dummy[i].chatId,id: dummy[i].id,peerId: dummy[i].peerId,);
                   })),
               )
             ],

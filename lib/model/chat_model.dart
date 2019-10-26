@@ -1,66 +1,84 @@
-class ChatModel{
+class ChatModel {
   final String name;
-  final String message;
+  final String lastMessage;
   final String time;
+  final String id;
+  final String chatId;
+  final String peerId;
   final String avatarUrl;
 
-  ChatModel({this.name,this.message,this.time,this.avatarUrl});
+  ChatModel(
+      {this.name,
+      this.lastMessage,
+      this.time,
+      this.avatarUrl,
+      this.chatId,
+      this.id,
+      this.peerId});
 }
-
-//https://floobits.com/akif/antalya
 
 List<ChatModel> dummy = [
   new ChatModel(
-      name: "GDG Antalya",
-      message: "this is going well",
+      name: "GDG Ankara",
+      lastMessage: "this is going well",
       time: "2:00 AM",
-      avatarUrl: "https://www.codemate.com/wp-content/uploads/2017/09/flutter-logo.png"),
+      chatId: "0",
+      id: "0",
+      peerId: "1",
+      avatarUrl:
+          "https://secure.meetupstatic.com/photos/event/e/2/a/7/600_484438023.jpeg"),
   new ChatModel(
-      name: "Mehmet",
-      message: "good",
+      name: "Akif",
+      lastMessage: "good",
       time: "3:00 AM",
+      id: "1",
+      peerId: "0",
+      chatId: "0",
       avatarUrl:
-      "https://sliconf.com/wp-content/uploads/2018/10/gdgantalya-2.png"),
+          "https://pbs.twimg.com/profile_images/972838345171767296/fgtKr1Nw_400x400.jpg"),
   new ChatModel(
-      name: "Ümit",
-      message: "thanks",
+      name: "Yüksel",
+      lastMessage: "thanks",
       time: "6:00 AM",
+      id: "0",
+      peerId: "0",
+      chatId: "6",
       avatarUrl:
-      "https://sliconf.com/wp-content/uploads/2018/10/gdgantalya-2.png"),
+      "http://0.gravatar.com/avatar/faa9b5d95144b737f1bbd44cbba32c55?s=512&d=mm&r=g"),
   new ChatModel(
-      name: "GDG Antalya",
-      message: "Hehe",
+      name: "Beyza",
+      lastMessage: "thanks",
+      time: "6:00 AM",
+      id: "0",
+      peerId: "0",
+      chatId: "2",
+      avatarUrl:
+          "https://miro.medium.com/max/3150/1*_vqIEWFL1avthwRxfw5-iA@2x.jpeg"),
+  new ChatModel(
+      name: "Sezer",
+      lastMessage: "Hehe",
+      id: "0",
+      peerId: "0",
       time: "2:03 PM",
-      avatarUrl:
-      "https://sliconf.com/wp-content/uploads/2018/10/gdgantalya-2.png"),
+      chatId: "3",
+      avatarUrl: "https://www.cs.hacettepe.edu.tr/images/temsilci/1.jpg"),
   new ChatModel(
-      name: "GDG Antalya",
-      message: "dude",
+      name: "Sena",
+      lastMessage: "dude",
+      id: "0",
+      peerId: "0",
       time: "3:20 AM",
+      chatId: "4",
       avatarUrl:
-      "https://sliconf.com/wp-content/uploads/2018/10/gdgantalya-2.png"),
+          "https://pbs.twimg.com/profile_images/1170418246144712705/-poPYruv_400x400.jpg"),
   new ChatModel(
-      name: "GDG Antalya",
-      message: "Hey, you are doing god",
+      name: "Güney",
+      lastMessage: "Hey, you are doing god",
       time: "3:00 AM",
+      id: "0",
+      peerId: "0",
+      chatId: "5",
       avatarUrl:
-      "https://sliconf.com/wp-content/uploads/2018/10/gdgantalya-2.png"),
-  new ChatModel(
-      name: "GDG Antalya",
-      message: "thanks",
-      time: "6:00 AM",
-      avatarUrl:
-      "https://sliconf.com/wp-content/uploads/2018/10/gdgantalya-2.png"),
-  new ChatModel(
-      name: "GDG Antalya",
-      message: "thalaiva",
-      time: "2:50 PM",
-      avatarUrl:
-      "https://sliconf.com/wp-content/uploads/2018/10/gdgantalya-2.png"),
-  new ChatModel(
-      name: "GDG Antalya",
-      message: "hoorah",
-      time: "2:03 PM",
-      avatarUrl:
-      "https://sliconf.com/wp-content/uploads/2018/10/gdgantalya-2.png")
+          "https://anlatsin.com/media/user/avatar/guney-kirik_1549528535.jpg"),
+
 ];

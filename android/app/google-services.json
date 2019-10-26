@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "40009761211",
+    "firebase_url": "https://chatapp-8e9c3.firebaseio.com",
+    "project_id": "chatapp-8e9c3",
+    "storage_bucket": "chatapp-8e9c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40009761211:android:9cecfe03294947e0b2049e",
+        "android_client_info": {
+          "package_name": "com.example.gdgankarachatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40009761211-7klgp9647bkh17vhsj2ji3v00nj6a0lh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGQjdHhfEjzbbNnpL_kHwtjEaaAY_iPOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40009761211-7klgp9647bkh17vhsj2ji3v00nj6a0lh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

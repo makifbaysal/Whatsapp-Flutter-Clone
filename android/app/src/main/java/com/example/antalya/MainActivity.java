@@ -1,4 +1,4 @@
-package com.example.antalya;
+package com.example.gdgankarachatapp;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
